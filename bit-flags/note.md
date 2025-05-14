@@ -43,4 +43,24 @@ if (style & is_added){
   // is_added is set
 }
 ```
+
+In `bit.c` we have defined a bit flag type and three individual flags:
+
+```c
+typedef unsigned int t_flag;
+
+#define FLAG_A (1 << 0)  // 0001 = 2^0 = 1
+#define FLAG_B (1 << 1)  // 0010 = 2^1 = 2
+#define FLAG_C (1 << 2)  // 0100 = 2^2 = 4
+```
+
+```c
+int main(int argc, char *argv[])
+{
+  printf("%d\n", f(1234, 0));                        // No flags
+  printf("%d\n", f(1234, FLAG_A));                   // FLAG_A only
+  printf("%d\n", f(1234, FLAG_B | FLAG_C));          // FLAG_B and FLAG_C
+
+  return EXIT_SUCCESS;
+}
 ```
