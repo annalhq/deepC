@@ -64,3 +64,14 @@ int main(int argc, char *argv[])
   return EXIT_SUCCESS;
 }
 ```
+### Applications
+
+SDL library uses this bit flag technique to store windowFlags. [SDL DOCS](https://wiki.libsdl.org/SDL2/SDL_WindowFlags)
+For create windows syntax in SLD is:
+
+```cpp
+SDL_Window * SDL_CreateWindow(const char *title,
+                              int x, int y, int w,
+                              int h, Uint32 flags);
+```
+It uses unsigned 32-bit integer to store flags.
