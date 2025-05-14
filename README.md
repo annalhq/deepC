@@ -7,5 +7,5 @@
 - [Advanced C: The UB and optimizations by Eskil Steenberg](https://www.youtube.com/watch?v=w3_e9vZj7D8)
 
 > [!NOTE]
-> Use LLVM CLANG optmization reports to emit code optimizations done by compiler transformations 
+> Use LLVM CLANG optimization reports to emit code optimizations done by compiler transformations 
 > More info [here](http://clang.llvm.org/docs/UsersManual.html#options-to-emit-optimization-reports)
